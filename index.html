@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2048</title>
+		<script src="jquery-2.1.4.min.js" type="application/javascript"></script>	
+		<script src="main.js" type="application/javascript"></script>
+		<script src="showanimation.js" type="application/javascript"></script>
+		<script src="support.js" type="application/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="2048.css">
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<h1>2048</h1>
+				<a href="javascript:newgame();" id = "newgamebutton">New Game</a>
+				<p>score:<span id="score">0</span></p>
+			</header>
+
+			<div id="grid-container">
+				<div class="grid-cell" id="grid-cell-0-0"></div>
+				<div class="grid-cell" id="grid-cell-0-1"></div>
+				<div class="grid-cell" id="grid-cell-0-2"></div>
+				<div class="grid-cell" id="grid-cell-0-3"></div>
+				
+				<div class="grid-cell" id="grid-cell-1-0"></div>			
+				<div class="grid-cell" id="grid-cell-1-1"></div>			
+				<div class="grid-cell" id="grid-cell-1-2"></div>			
+				<div class="grid-cell" id="grid-cell-1-3"></div>
+	
+				<div class="grid-cell" id="grid-cell-2-0"></div>			
+				<div class="grid-cell" id="grid-cell-2-1"></div>			
+				<div class="grid-cell" id="grid-cell-2-2"></div>			
+				<div class="grid-cell" id="grid-cell-2-3"></div>			
+				
+				<div class="grid-cell" id="grid-cell-3-0"></div>						
+				<div class="grid-cell" id="grid-cell-3-1"></div>						
+				<div class="grid-cell" id="grid-cell-3-2"></div>						
+				<div class="grid-cell" id="grid-cell-3-3"></div>						
+			</div>
+			<div class="data-area">
+				<p>欢迎来到自定制版2048，您可以在下面的输入框输入值（不超过3个字符）来定制自己的2048，然后点击提交按钮即可以开始游戏。</p>
+				<input type="text" maxlength="3" value="2"/>
+				<input type="text" maxlength="3" value="4"/>
+				<input type="text" maxlength="3" value="8"/>
+				<input type="text" maxlength="3" value="16"/>
+				<input type="text" maxlength="3" value="32"/>
+				<input type="text" maxlength="3" value="64"/>
+				<input type="text" maxlength="3" value="128"/>
+				<input type="text" maxlength="3" value="256"/>
+				<input type="text" maxlength="3" value="512"/>
+				<input type="text" maxlength="3" value="1024"/>
+				<input type="text" maxlength="3" value="2048"/>
+				<input type="text" maxlength="3" value="4096"/>
+				<input type="submit" class="sumit" onclick="submitdata();" />
+			</div>	
+		</div>
+	</body>
+</html>
