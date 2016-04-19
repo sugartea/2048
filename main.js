@@ -102,28 +102,28 @@ function generateOneNumber(){
 //键盘按下时的动作
 $(document).keydown(function( event ){
 	switch (event.keyCode){
-		case 37://left
+		case 65://left
 			if( moveLeft() ){
 				setTimeout('generateOneNumber()',210);
 				setTimeout('isgameover()',300);
 			};
 			break;
 		
-		case 38://up
+		case 87://up
 			if( moveUp() ){
 				setTimeout('generateOneNumber()',210);
 				setTimeout('isgameover()',300);
 			};
 			break;
 		
-		case 39://right
+		case 68://right
 			if( moveRight() ){
 				setTimeout('generateOneNumber()',210);
 				setTimeout('isgameover()',300);
 			};
 			break;
 		
-		case 40://down
+		case 83://down
 			if( moveDown() ){
 				setTimeout('generateOneNumber()',210);
 				setTimeout('isgameover()',300);
